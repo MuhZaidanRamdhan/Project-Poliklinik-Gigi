@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <title>Register</title>
+    <style>
+.navbar-brand {
+        font-family: Viga;
+        font-size: 32px;
+    }
+    .navbar {
+        position: relative;
+        z-index: 1;
+    }
+    #nav-bg {
+      background-color: #198754!important;
+    }
+    .navbar a {
+        font-family: Poopins, sans-serif;
+    }
+    
+.register{
+    background: -webkit-linear-gradient(left, #5F9EA0, #00c31a);
+    border-radius: 2%;
+    margin-top: 8%;
+    padding: 3%;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 5%;
+}
+.register-left #login{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2% 30%;
+    width: 10%;
+    background: #f8f9fa;
+    color: #010101;
+    margin-top: 100%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-left a:hover {
+    text-decoration: none;
+}
+
+.register-right{
+    background: #f8f9fa;
+    margin-top: 15px;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #87CEFA	;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #87CEFA	;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #000000;
+    border: 2px solid #87CEFA;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+footer {
+    margin-top: 400px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-bg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Medic</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="../layanan/layanan.html">Layanan</a>
+              <a class="nav-item nav-link" href="../login-regist/Login.html">Booking</a>
+              <a class="nav-item nav-link" href="../dokter/Dokter1.html">Dokter</a>
+              <a class="nav-item nav-link" href="#foot">Tentang kami</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <form action="Register_berhasil.html">
+    <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome.</h3>
+                        <a href="Login.html" id="login">Login</a>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Apply as a Register</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Username *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="12" name="txtEmpPhone" class="form-control" placeholder="Phone Number *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <footer class="footer-basic-centered mt-6 text-dark bg-dark col-md-12 p-5" id="foot">
+
+            <p class="footer-company-motto text-center text-light">Poliklinik Dokter Gigi</p>
+      
+            <p class="footer-links text-center">
+              <a href="../index.html" class="text-light">Home</a>
+              ·
+              <a href="../layanan/layanan.html" class="text-light">Layanan</a>
+              ·
+              <a href="../login-regist/Login.html" class="text-light">Booking</a>
+              ·
+              <a href="../dokter/Dokter1.html" class="text-light">Dokter</a>
+              ·
+              <a href="#" class="text-light">Contact</a>
+              ·
+              <a href="#foot" class="text-light">Tentang Kami</a>
+            </p>
+      
+            <p class="footer-company-name text text-center text-light ">Mahasiswa STT-NF &copy; 2022</p>   
+    </body>
+</html>

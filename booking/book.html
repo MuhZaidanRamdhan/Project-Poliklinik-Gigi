@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <style>
+         .navbar-brand {
+        font-family:Viga;
+        font-size: 32px;
+        }
+        .navbar {
+            position: relative;
+            z-index: 1;
+        }
+        #nav-bg {
+        background-color: #198754!important;
+        }
+        .text {
+            width:100%;
+        }
+        .sel {
+            width: 100%;
+        }
+        h2 {
+            margin-left: 10px;
+        }
+        #fiel {
+            margin:20px 10px;
+        }
+        #grup {
+            margin:0 10px ;
+            padding: 10px;
+        }
+        #but:hover {
+            background-color: #218838;
+        }
+        .h3in {
+          margin-top:10px;
+        }
+        table td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="h3in">
+                <center>Klinik Kesehatan Gigi Ananda-Jakarta</center>
+            </h3>
+        </div>
+    </div>
+</div>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-bg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Medic</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="../layanan/layanan.html">Layanan</a>
+              <a class="nav-item nav-link active" href="../booking/book.html">Booking</a>
+              <a class="nav-item nav-link" href="../dokter/Dokter1.html">Dokter</a>
+              <a class="nav-item nav-link" href="#foot">Tentang kami</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+ 
+      <br>
+      <fieldset class="form-group border p-3" id="fiel">
+      <legend class="w-auto px-2">Booking Pemeriksaan Gigi</legend>
+      <form action="../admin/admin.html">
+        <div class="form-group row" id="grup">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Pasien :</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputtext3" required>
+          </div>
+        </div>
+        </div>
+        <div class="form-group row" id="grup"> 
+            <label for="inputState" class="col-sm-2 col-form-label">Pilih Dokter</label>
+        <div class="col-sm-10">
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Drg Eka Subaty</option>
+              <option>Drg Nova Elvarani</option>
+              <option>Drg Andi Herdiana</option>
+              <option>Drg Toni Achmad</option>
+            </select>
+        </div>
+        </div>
+        <div class="form-group row" id="grup"> 
+            <label for="inputState" class="col-sm-2 col-form-label">Pilih Layanan</label>
+        <div class="col-sm-10">
+            <select id="inputState" class="form-control" required>
+              <option selected>Choose...</option>
+              <option>Perawatan Gigi Anak</option>
+              <option>Perawatan Gigi Ortodonti</option>
+            </select>
+        </div>
+        </div>
+        <div class="form-group row" id="grup">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Keluhan</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputtext3" required>
+            </div>
+          </div>
+          <div class="form-group row" id="grup">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Pemeriksaan</label>
+            <div class="col-sm-10">
+              <input type="datetime-local" class="form-control" id="inputdate3">
+            </div>
+          </div>
+          <div class="form-group row" id="grup">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Umur</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputtext3">
+            </div>
+          </div>
+          <div class="form-group row" id="grup">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">No.telp/Hp</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputnumber3"required>
+            </div>
+          </div>
+          <div class="form-group row" id="grup">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputemail3">
+            </div>
+          </div>
+        <div class="form-group row" id="grup">
+            <label for="inputcheck3" class="col-sm-2 col-form-label">Pembayaran</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-label" type="checkbox" id="inputcheck3">
+              <label class="form-check-label" for="inputcheck3">
+                Cash
+              </label>
+            </div>
+              <div class="col-sm-10">
+              <input class="form-check-label" type="checkbox" id="inputcheck3">
+              <label class="form-check-label" for="inputcheck3">
+                Transfer
+              </label>
+              </div>
+              <div class="col-sm-10">
+              <input class="form-check-label" type="checkbox" id="inputcheck3">
+              <label class="form-check-label" for="inputcheck3">
+                E-Wallet
+              </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center>
+            <button type="submit" class="btn btn-primary" id="but">Submit</button>
+            <button type="reset" class="btn btn-danger" >Reset</button>
+    </center>
+    <br>
+      </form>
+                            
+            </div>
+        </div>
+    </div>
+</fieldset>
+      <footer class="footer-basic-centered mt-6 text-dark bg-dark col-md-12 p-5" id="foot">
+
+        <p class="footer-company-motto text-center text-light">Poliklinik Dokter Gigi</p>
+
+        <p class="footer-links text-center">
+            <a href="../index.html" class="text-light">Home</a>
+            ·
+            <a href="../layanan/layanan.html" class="text-light">Layanan</a>
+            ·
+            <a href="../booking/book.html" class="text-light">Booking</a>
+            ·
+            <a href="#" class="text-light">Dokter</a>
+            ·
+            <a href="#" class="text-light">Contact</a>
+            ·
+            <a href="#foot" class="text-light">Tentang Kami</a>
+        </p>
+
+        <p class="footer-company-name text text-center text-light ">Mahasiswa STT-NF &copy; 2022</p>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+</body>
+</html>

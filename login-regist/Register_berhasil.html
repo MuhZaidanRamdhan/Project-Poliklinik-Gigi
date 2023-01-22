@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Register Berhasil</title>
+    <style>
+        body.modal-open #wrap{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    }
+    
+    .modal-backdrop {background: #f7f7f7;}
+
+    .close {
+        font-size: 50px;
+        display:block;
+    }
+    .p1 {
+        font-size: 18px;
+    }
+    button {
+        width: 10%;
+        font-weight: 10px;
+    }
+    h4 {
+        margin-top: 10px;
+    }
+    #check {
+        color: rgb(153, 255, 0);
+        font-size: 200px;
+        margin-bottom: 20px;
+    }
+    #click {
+        font-style: normal;
+        font-size: 20px;
+        color: black;
+        padding: 0 10;
+    }
+    #but {
+        width: 130px;
+    }
+    </style>
+</head>
+<body>
+    
+<!------ Include the above in your HEAD tag ---------->
+
+<div id="wrap" class="text-center">
+  <!-- Button trigger modal -->
+  <br>
+  <i class="fa-regular fa-circle-check" id="check"></i>
+  <p class="p1">Register telah berhasil <br></p>
+<input type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="but" value="Click Here">
+</button>
+</div>
+
+<!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+            <br><br>
+            <h1>Anda berhasil registrasi</h1>
+            <h2>Harap login menggunakan akun dibawah ini:</h2>
+            <h4>Username : <kbd>member1234</kbd> <br><br> Password : <kbd>member1234</kbd></h4>
+            <h4><a href="Login.html">Click here</a> untuk login</h4>
+            <h4>Click dimana pun untuk keluar</h4>
+            <hr>
+            <div class="alert alert-danger"><h4>Terimakasih;)</h4></div>
+        </div>
+        </div>
+    </div>
+    </div>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
